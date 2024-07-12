@@ -1,0 +1,8 @@
+.box{
+  background-color: rgb(139, 151, 218);
+  width: 600px;
+  height: 500px;
+}
+td,th{
+  vertical-align: middle;
+}

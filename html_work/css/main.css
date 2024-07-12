@@ -1,0 +1,66 @@
+.main-background {
+  width: 100%;
+  height: 450px;
+  background-image: url(../img/happy.jpg);
+  background-size: cover;
+  /* cover,contain 배경짤려고 괜찮으니 빈공간없이 채워라 */
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(45%);
+  padding: 1px;
+}
+ .main-title {
+  color: white;
+  font-size: 40px;
+  margin-top: 200px;
+ }
+ .main-content{
+  font-size: 12px;
+ }
+  /*.main-button {
+  
+  padding: 10px;
+  font-size: 10px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 150px;
+  position 부여하면 좌표이동가능,공중에뜬다
+    position relative- 내원래 위치가 기준
+    position absolute- 부모태그가 기분(relative 가진부모만
+    position fixed- 현재 화면이 기준
+  z-index: 5;
+ }*/
+.coal {
+  width: 80%;
+  max-width: 600px;
+  /*width: % 쓰면 모바일창이큼
+    max-width 같이쓰삼*/
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(129, 108, 108, 0.63);
+  position: relative;
+  top: -40px;
+  z-index: 1;
+  box-sizing: border-box;
+
+}
+div {
+  box-sizing: border-box;
+
+}
+body{
+  margin: 0px;
+}
+/* normalize.css 브라우저 호완성 해결 파일. 구글에 치셈*/
+.text-input {
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+}

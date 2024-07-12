@@ -1,0 +1,8 @@
+td,th{
+  border: 1px solid black;
+}
+  
+table{ 
+  /*border-collapse<=행열 붙힐때씀*/
+  border-collapse: collapse;
+}
