@@ -1,0 +1,22 @@
+.box{
+  width: 100%;
+  background-color: beige;
+  padding: 30px;
+}
+.box1{
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/*nth-child(3): n번째 등장하는 요소만 스탈링할때*/
+.box1 th:nth-child(3){
+  padding: 15px;
+  border-bottom: 1px solid #c2d3de;
+  
+}
+.long{
+  width: 200px;
+}
