@@ -3,7 +3,7 @@ package bb;
 public class Ex10 {
     public static void main(String[] args) {
         int grade = 2;
-
+        //자바17
         // 새로운 switch문 작성법 -> 를 사용한다!!!
         int coupon = switch (grade) {
             case 1 -> 1000;
