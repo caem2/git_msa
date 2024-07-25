@@ -1,0 +1,19 @@
+package ee;
+
+import java.util.Scanner;
+
+public class Ex02 {
+//계산기 만들기
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("첫 번째 숫자를 입력하세요:");
+        int num1 = scanner.nextInt();
+
+        System.out.println("두 번째 숫자를 입력하세요:");
+        int num2 = scanner.nextInt();
+
+        int sum = num1 + num2;
+        System.out.println("두 숫자의 합" + sum);
+    }
+}

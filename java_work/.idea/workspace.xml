@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68af3bf1-3000-48d9-90dc-ef074312bf68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ex07/src/AA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex07/src/BB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex07/src/CC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex07/src/DD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex07/src/EE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex07/src/FF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex07/src/GG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex07/src/HH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../html_work/2/img/숲.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../html_work/4/ex01.html" beforeDir="false" afterPath="$PROJECT_DIR$/../html_work/4/ex01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../html_work/css/mystyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../html_work/css/mystyle1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../html_work/css/table.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/day01/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/day01/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/.project" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex02/.project" beforeDir="false" afterPath="$PROJECT_DIR$/ex02/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex03/.project" beforeDir="false" afterPath="$PROJECT_DIR$/ex03/.project" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2iwXh92xAwq8El094dAg9aqRe86" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "uswe2",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68af3bf1-3000-48d9-90dc-ef074312bf68" name="Changes" comment="" />
+      <created>1720402747268</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720402747268</updated>
+    </task>
+    <servers />
+  </component>
+</project>

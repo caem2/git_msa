@@ -1,0 +1,1237 @@
+Index: src/ee/Ex02.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ee/Ex02.java b/src/ee/Ex02.java
+new file mode 100644
+--- /dev/null	(date 1721627650491)
++++ b/src/ee/Ex02.java	(date 1721627650491)
+@@ -0,0 +1,19 @@
++package ee;
++
++import java.util.Scanner;
++
++public class Ex02 {
++//계산기 만들기
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("첫 번째 숫자를 입력하세요:");
++        int num1 = scanner.nextInt();
++
++        System.out.println("두 번째 숫자를 입력하세요:");
++        int num2 = scanner.nextInt();
++
++        int sum = num1 + num2;
++        System.out.println("두 숫자의 합" + sum);
++    }
++}
+Index: src/ee/Solution.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ee/Solution.java b/src/ee/Solution.java
+new file mode 100644
+--- /dev/null	(date 1721713997205)
++++ b/src/ee/Solution.java	(date 1721713997205)
+@@ -0,0 +1,18 @@
++package ee;
++
++import java.util.Scanner;
++
++public class Solution {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        int year = scanner.nextInt();
++        String age_type = scanner.next();
++        int answer = 0;
++
++        if (age_type.equals("Korea")){
++            answer = 31;
++        } else if (age_type.equals("year")) {
++            answer = 31;
++        }
++    }
++    }
+Index: src/ee/Ex04.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ee/Ex04.java b/src/ee/Ex04.java
+new file mode 100644
+--- /dev/null	(date 1721700098327)
++++ b/src/ee/Ex04.java	(date 1721700098327)
+@@ -0,0 +1,26 @@
++package ee;
++
++import java.util.Scanner;
++
++public class Ex04 {
++    /*
++    사용자가 입력한 문자열을 그대로 출력하는 예제를 만들어보자.
++exit 라는 문자가 입력되면 프로그램을 종료한다.
++프로그램은 반복해서 실행된다
++     */
++
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        while (true){
++            System.out.print("문자열을 입력하세요(exit:종료)");
++            String str = scanner.nextLine();
++            if (str.equals("exit")) {
++                System.out.println("프로그램 종료");
++                break;
++            }
++            System.out.println("입력할 문자열:" + str);
++        }
++
++    }
++}
+Index: src/ee/Ex03.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ee/Ex03.java b/src/ee/Ex03.java
+new file mode 100644
+--- /dev/null	(date 1721628168342)
++++ b/src/ee/Ex03.java	(date 1721628168342)
+@@ -0,0 +1,24 @@
++package ee;
++
++import java.util.Scanner;
++
++public class Ex03 {
++    //더 큰 숫자 찾기
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("첫 번째 숫자를 입력하셈:");
++        int num1 = scanner.nextInt();
++
++        System.out.println("두 번째 숫자를 입력하셈:");
++        int num2 = scanner.nextInt();
++
++        if (num1 > num2) {
++            System.out.println("더 큰 숫자:"+ num1);
++        } else if (num1 < num2) {
++            System.out.println("더 큰 숫자:"+ num2);
++        }else {
++            System.out.println("두 숫자는 같음");
++        }
++    }
++}
+Index: ../ex18/src/main/java/org/example/inter/Printable.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/src/main/java/org/example/inter/Printable.java b/../ex18/src/main/java/org/example/inter/Printable.java
+new file mode 100644
+--- /dev/null	(date 1721697239680)
++++ b/../ex18/src/main/java/org/example/inter/Printable.java	(date 1721697239680)
+@@ -0,0 +1,10 @@
++package org.example.inter;
++
++public interface Printable {
++
++    public static final int HEIGHT = 70;
++    int WIDTH = 120;
++
++    void print(String mydoc);
++    void prinCMK(String mydoc);
++}
+Index: src/ee/Ex05.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ee/Ex05.java b/src/ee/Ex05.java
+new file mode 100644
+--- /dev/null	(date 1721700130140)
++++ b/src/ee/Ex05.java	(date 1721700130140)
+@@ -0,0 +1,30 @@
++package ee;
++
++import java.util.Scanner;
++
++public class Ex05 {
++    /*
++    첫 번째 숫자와 두 번째 숫자를 더해서 출력하는 프로그램을 개발하자.
++첫 번째 숫자와 두 번째 숫자 모두 0을 입력하면 프로그램을 종료한다.
++프로그램은 반복해서 실행된다.
++    <내가푼거>
++     */
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        System.out.println("두 숫자를 0으로 입력하면 종료");
++
++        while (true){
++            System.out.print("첫번째 숫자 입력:");
++            int str = scanner.nextInt();
++            System.out.print("두번째 숫자 입력:");
++            int str1 = scanner.nextInt();
++            System.out.println("두 수 의합 :" + (str + str1));
++            if (str == 0){
++            if (str1 == 0){
++                System.out.println(str+str1);
++                break;
++            }
++            }
++        }System.out.println("종료");
++    }
++}
+Index: ../ex18/src/main/java/org/example/print/LGPrinter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/src/main/java/org/example/print/LGPrinter.java b/../ex18/src/main/java/org/example/print/LGPrinter.java
+new file mode 100644
+--- /dev/null	(date 1721698205179)
++++ b/../ex18/src/main/java/org/example/print/LGPrinter.java	(date 1721698205179)
+@@ -0,0 +1,18 @@
++package org.example.print;
++
++import org.example.inter.Printable;
++
++public class LGPrinter implements Printable {
++    @Override
++    public void print(String mydoc) {
++        System.out.println("LG프린터 출력");
++        System.out.println(mydoc);
++    }
++
++    @Override
++    public void prinCMK(String mydoc) {
++
++    }
++
++
++}
+Index: ../ex18/src/main/java/org/example/print/SmaPrinter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/src/main/java/org/example/print/SmaPrinter.java b/../ex18/src/main/java/org/example/print/SmaPrinter.java
+new file mode 100644
+--- /dev/null	(date 1721698750774)
++++ b/../ex18/src/main/java/org/example/print/SmaPrinter.java	(date 1721698750774)
+@@ -0,0 +1,16 @@
++package org.example.print;
++
++import org.example.inter.Printable;
++
++public class SmaPrinter implements Printable {
++    @Override
++    public void print(String mydoc) {
++        System.out.println("삼성프린터 출력");
++        System.out.println(mydoc);
++    }
++
++    @Override
++    public void prinCMK(String mydoc) {
++
++    }
++}
+Index: src/ee/Ex06.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ee/Ex06.java b/src/ee/Ex06.java
+new file mode 100644
+--- /dev/null	(date 1721700130122)
++++ b/src/ee/Ex06.java	(date 1721700130122)
+@@ -0,0 +1,31 @@
++package ee;
++
++import java.util.Scanner;
++
++public class Ex06 {
++    /*
++    첫 번째 숫자와 두 번째 숫자를 더해서 출력하는 프로그램을 개발하자.
++첫 번째 숫자와 두 번째 숫자 모두 0을 입력하면 프로그램을 종료한다.
++프로그램은 반복해서 실행된다.
++     */
++
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.println("첫번째 숫자와 두번째 숫자 모두 0을 입력하면 프로그램을 종료합니다");
++        while (true) {
++            System.out.println("첫번째 숫자를 입력하세요");
++            int num1 = scanner.nextInt();
++
++            System.out.println("두번째 숫자를 입력하세요");
++            int num2 = scanner.nextInt();
++
++            if (num1 == 0 && num2 == 0){
++                System.out.println("프로그램 종료");
++                break;
++            }
++            int sum = num1 + num2;
++        }
++
++    }
++}
+Index: ../ex18/src/main/java/org/example/inter/CMYKPrintable.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/src/main/java/org/example/inter/CMYKPrintable.java b/../ex18/src/main/java/org/example/inter/CMYKPrintable.java
+new file mode 100644
+--- /dev/null	(date 1721697410485)
++++ b/../ex18/src/main/java/org/example/inter/CMYKPrintable.java	(date 1721697410485)
+@@ -0,0 +1,6 @@
++package org.example.inter;
++
++public interface CMYKPrintable extends Printable{
++
++    void printCMYK(String doc);
++}
+Index: src/ee/Ex08.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ee/Ex08.java b/src/ee/Ex08.java
+new file mode 100644
+--- /dev/null	(date 1721700775452)
++++ b/src/ee/Ex08.java	(date 1721700775452)
+@@ -0,0 +1,27 @@
++package ee;
++
++import java.util.Scanner;
++
++public class Ex08 {
++    /*
++    문제 - 이름 나이 입력받고 출력하기
++사용자로부터 입력받은 이름과 나이를 출력하세요. 출력 형태는 "당신의 이름은 [이름]이고, 나이는 [나이]살입니다." 이
++어야 합니다.
++실행 결과 예시 ```
++당신의 이름을 입력하세요:자바
++당신의 나이를 입력하세요:30
++당신의 이름은 자바이고, 나이는 30살입니다
++     */
++
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.print("당신의 이름을 입력하세요:");
++        String name = scanner.nextLine();
++
++        System.out.print("당신의 나이를 입력하세요:");
++        int age = scanner.nextInt();
++
++        System.out.println("당신의 이름은 " + name + "이고," + "나이는 " + age + "입니다." );
++    }
++}
+Index: src/ee/Ex07.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ee/Ex07.java b/src/ee/Ex07.java
+new file mode 100644
+--- /dev/null	(date 1721700148217)
++++ b/src/ee/Ex07.java	(date 1721700148217)
+@@ -0,0 +1,28 @@
++package ee;
++
++import java.util.Scanner;
++
++public class Ex07 {
++    /*
++    사용자 입력을 받아 그 합계를 계산하는 프로그램을 작성해야 한다.
++사용자는 한 번에 한 개의 정수를 입력할 수 있으며, 사용자가 0을 입력하면 프로그램은 종료된다. 이 때, 프로그램이 종
++료될 때까지 사용자가 입력한 모든 정수의 합을 출력해야 한다
++     */
++
++    public static void main(String[] args) {
++        Scanner input = new Scanner(System.in);
++
++        int sum = 0;
++
++        while (true){
++            System.out.println("정수를 입력하세요(0을 입력하면 종료):");
++            int number = input.nextInt();
++
++            if (number == 0) {
++                break;
++            }
++            sum += number;
++        }
++        System.out.println("입력한 모든 정수의 합" + sum);
++    }
++}
+Index: src/dd/Ex02.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex02.java b/src/dd/Ex02.java
+new file mode 100644
+--- /dev/null	(date 1721608529653)
++++ b/src/dd/Ex02.java	(date 1721608529653)
+@@ -0,0 +1,18 @@
++package dd;
++
++public class Ex02 {
++    /*
++    문제: 자연수 출력
++처음 10개의 자연수를 출력하는 프로그램을 작성해 보세요. 이때, count 라는 변수를 사용해야 합니다.
++while문, for문 2가지 버전의 정답을 만들어야 합니다.
++     */
++
++    public static void main(String[] args) {
++
++        for (int count = 1; count <= 10; count++) {
++            System.out.println(count);
++        }
++    }
++
++
++}
+Index: src/ee/Ex09.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ee/Ex09.java b/src/ee/Ex09.java
+new file mode 100644
+--- /dev/null	(date 1721713235216)
++++ b/src/ee/Ex09.java	(date 1721713235216)
+@@ -0,0 +1,18 @@
++package ee;
++
++import java.util.Scanner;
++
++public class Ex09 {
++
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.print("하나의 정수를 입력하세요:");
++        int number = scanner.nextInt();
++
++
++
++
++
++    }
++}
+Index: src/dd/Ex01.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex01.java b/src/dd/Ex01.java
+new file mode 100644
+--- /dev/null	(date 1721608340205)
++++ b/src/dd/Ex01.java	(date 1721608340205)
+@@ -0,0 +1,13 @@
++package dd;
++
++public class Ex01 {
++    public static void main(String[] args) {
++        int count = 0;
++
++        while (count < 10){
++            count++;
++            System.out.println(count);
++
++        }
++    }
++}
+Index: src/dd/Ex03.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex03.java b/src/dd/Ex03.java
+new file mode 100644
+--- /dev/null	(date 1721608905339)
++++ b/src/dd/Ex03.java	(date 1721608905339)
+@@ -0,0 +1,15 @@
++package dd;
++
++public class Ex03 {
++
++    public static void main(String[] args) {
++        int num = 2;
++        int count = 1;
++
++        while (count <= 10){
++            System.out.println(num);
++            num += 2;
++            count++;
++        }
++    }
++}
+Index: ../ex18/src/main/java/org/example/Ex01.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/src/main/java/org/example/Ex01.java b/../ex18/src/main/java/org/example/Ex01.java
+new file mode 100644
+--- /dev/null	(date 1721712258893)
++++ b/../ex18/src/main/java/org/example/Ex01.java	(date 1721712258893)
+@@ -0,0 +1,47 @@
++package org.example;
++
++import java.util.InputMismatchException;
++import java.util.Scanner;
++
++public class Ex01 {
++    /*
++    interface
++
++    변수..public static final 안적어두댐
++    int A
++    몸체가 없는 메서드..public 안적어두댐
++    void doA();
++
++    class 만들어서 interface 상속 받아야댐
++    doA() 메서드 재정의..
++
++    default() -> new .. 사용해는 되는것
++    static() -> Printable.doA();
++
++    람다 규칙은
++    interface 하나의 추상메서드가 존재 해야한다
++    ()->{}
++
++     */
++
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        try {
++            System.out.println("a : ");
++            int a = scanner.nextInt();
++            System.out.println("b : ");
++            int b = scanner.nextInt();
++
++            System.out.println("나누기 시작");
++            System.out.println(a / b);
++            System.out.println("나누기 끝");
++
++        } catch (InputMismatchException ie){
++            System.out.println();
++        } catch (Exception e) {
++            System.out.println("0으로 나눌수없셈");
++        }
++        }
++    }
++
+Index: ../ex18/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/pom.xml b/../ex18/pom.xml
+new file mode 100644
+--- /dev/null	(date 1721609094607)
++++ b/../ex18/pom.xml	(date 1721609094607)
+@@ -0,0 +1,27 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>org.example</groupId>
++    <artifactId>ex18</artifactId>
++    <version>1.0-SNAPSHOT</version>
++
++    <properties>
++        <maven.compiler.source>17</maven.compiler.source>
++        <maven.compiler.target>17</maven.compiler.target>
++        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
++    </properties>
++    <dependencies>
++        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
++        <dependency>
++            <groupId>org.projectlombok</groupId>
++            <artifactId>lombok</artifactId>
++            <version>1.18.34</version>
++            <scope>provided</scope>
++        </dependency>
++    </dependencies>
++
++
++</project>
+\ No newline at end of file
+Index: ../ex18/.idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/.idea/uiDesigner.xml b/../ex18/.idea/uiDesigner.xml
+new file mode 100644
+--- /dev/null	(date 1721706788818)
++++ b/../ex18/.idea/uiDesigner.xml	(date 1721706788818)
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../ex18/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/.idea/misc.xml b/../ex18/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1721609015121)
++++ b/../ex18/.idea/misc.xml	(date 1721609015121)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1721715928056)
++++ b/.idea/misc.xml	(date 1721715928056)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" default="true">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../ex18/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/.idea/vcs.xml b/../ex18/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1721609074691)
++++ b/../ex18/.idea/vcs.xml	(date 1721609074691)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../ex18/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/.idea/.gitignore b/../ex18/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1721609020863)
++++ b/../ex18/.idea/.gitignore	(date 1721609020863)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: src/dd/Ex05.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex05.java b/src/dd/Ex05.java
+new file mode 100644
+--- /dev/null	(date 1721609557804)
++++ b/src/dd/Ex05.java	(date 1721609557804)
+@@ -0,0 +1,16 @@
++package dd;
++
++public class Ex05 {
++
++    public static void main(String[] args) {
++        int sum = 0;
++        int max = 100;
++        int i = 1;
++
++        while (i <= max){
++            sum += i;
++            i++;
++        }
++        System.out.println(sum);
++    }
++}
+Index: src/dd/Ex04.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex04.java b/src/dd/Ex04.java
+new file mode 100644
+--- /dev/null	(date 1721609320600)
++++ b/src/dd/Ex04.java	(date 1721609320600)
+@@ -0,0 +1,14 @@
++package dd;
++
++import java.util.Enumeration;
++
++public class Ex04 {
++
++    public static void main(String[] args) {
++
++        for (int num = 2,count =1; count <= 10; num+= 2, count++) {
++            System.out.println(num);
++
++        }
++    }
++}
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1721716191082)
++++ b/.idea/vcs.xml	(date 1721716191082)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/dd/Ex07.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex07.java b/src/dd/Ex07.java
+new file mode 100644
+--- /dev/null	(date 1721610439901)
++++ b/src/dd/Ex07.java	(date 1721610439901)
+@@ -0,0 +1,13 @@
++package dd;
++
++public class Ex07 {
++
++    public static void main(String[] args) {
++
++        for (int i = 1; i <= 9; i++) {
++            for (int j = 1; j <= 9; j++) {
++                System.out.println(i + " * "+ j + " = " + i * j);
++            }
++        }
++    }
++}
+Index: src/dd/Ex06.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex06.java b/src/dd/Ex06.java
+new file mode 100644
+--- /dev/null	(date 1721610069497)
++++ b/src/dd/Ex06.java	(date 1721610069497)
+@@ -0,0 +1,15 @@
++package dd;
++
++public class Ex06 {
++
++    public static void main(String[] args) {
++         int max = 100;
++
++         int sum = 0;
++
++        for (int i = 1; i <=max ; i++) {
++            sum += i;
++        }
++        System.out.println(sum);
++    }
++}
+Index: src/dd/Ex09.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex09.java b/src/dd/Ex09.java
+new file mode 100644
+--- /dev/null	(date 1721611961005)
++++ b/src/dd/Ex09.java	(date 1721611961005)
+@@ -0,0 +1,13 @@
++package dd;
++
++public class Ex09 {
++
++    public static void main(String[] args) {
++        int m= 10;//m생존 시작
++        if (true){
++            int x = 10;//x생존 시작
++            System.out.println("if m = " + m);
++            System.out.println("if x =" + x);
++        }//x 생존종료
++    }//m 생존종료
++}
+Index: src/dd/Ex08.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex08.java b/src/dd/Ex08.java
+new file mode 100644
+--- /dev/null	(date 1721610779880)
++++ b/src/dd/Ex08.java	(date 1721610779880)
+@@ -0,0 +1,16 @@
++package dd;
++
++public class Ex08 {
++
++    public static void main(String[] args) {
++
++        int rows =3;
++
++        for (int i = 1; i <= rows ; i++) {
++            for (int j = 1; j <= i; j++) {
++                System.out.print("*");
++            }
++            System.out.println();
++        }
++    }
++}
+Index: src/dd/Ex11.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex11.java b/src/dd/Ex11.java
+new file mode 100644
+--- /dev/null	(date 1721612714486)
++++ b/src/dd/Ex11.java	(date 1721612714486)
+@@ -0,0 +1,20 @@
++package dd;
++
++public class Ex11 {
++    public static void main(String[] args) {
++
++        int m = 10;
++        int temp = 0;
++        if (m > 0){
++            temp = m * 2;
++            System.out.println("temp = " + temp);
++        }
++        System.out.println("m = " + m);
++    }
++}
++/*
++main 안에 temp 변수가 입력되었는데 temp는 if문 안에서만 사용된다
++그래서 main 함수에 넣지말고 if 문 안에 넣도록하자
++왜냐 불필요한 메모리가 증가되고 if문이 끝나면 생각 안해도되는 temp가
++main 안에 있으면 계속 생각해면서 코드를 짜야한다
++ */
+Index: src/dd/Ex10.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex10.java b/src/dd/Ex10.java
+new file mode 100644
+--- /dev/null	(date 1721612080519)
++++ b/src/dd/Ex10.java	(date 1721612080519)
+@@ -0,0 +1,13 @@
++package dd;
++
++public class Ex10 {
++    public static void main(String[] args) {
++        int m = 10;
++        for (int i = 0; i < 2; i++) {
++            System.out.println("for m = " + m);
++            System.out.println("for i = " + i);
++        }//i 생존종료
++        System.out.println("main m = " + m);
++      //System.out.println("main i = " + i); 오류, m에 접근불가
++    }
++}
+Index: src/dd/Ex13.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex13.java b/src/dd/Ex13.java
+new file mode 100644
+--- /dev/null	(date 1721613860853)
++++ b/src/dd/Ex13.java	(date 1721613860853)
+@@ -0,0 +1,21 @@
++package dd;
++
++public class Ex13 {
++    public static void main(String[] args) {
++//      int < long < double
++        int intValue = 10;
++        long longValue;
++        double doubleValue;
++
++        longValue = intValue; //int -> long
++        System.out.println("longValue = " + longValue);
++
++        doubleValue = intValue; //int -> double
++        System.out.println("doubleValue = " + doubleValue);
++
++        doubleValue = 20l; // long -> double
++        System.out.println("doubleValue2 = " + doubleValue);
++        //작은 형을 큰 형에 넣는건 아무문제가 없다
++        //자동으로 바꿔줌 그래서 자동형변환
++    }
++}
+Index: src/dd/Ex12.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex12.java b/src/dd/Ex12.java
+new file mode 100644
+--- /dev/null	(date 1721613143155)
++++ b/src/dd/Ex12.java	(date 1721613143155)
+@@ -0,0 +1,14 @@
++package dd;
++
++public class Ex12 {
++    public static void main(String[] args) {
++
++        int m = 10;
++        if (m > 0){
++            int temp = m * 2;
++            System.out.println("temp = " + temp);
++        }
++        System.out.println("m = " + m);
++    }
++}
++
+Index: src/dd/Ex15.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex15.java b/src/dd/Ex15.java
+new file mode 100644
+--- /dev/null	(date 1721616429067)
++++ b/src/dd/Ex15.java	(date 1721616429067)
+@@ -0,0 +1,16 @@
++package dd;
++
++public class Ex15 {
++    public static void main(String[] args) {
++        long maxIntValue = 2147483647;//int 최고값
++        long maxIntOver = 2147483648L;//int 최고값 + 1(초과)
++        int intValue = 0;
++
++        intValue = (int)maxIntValue;//형변환
++        System.out.println("maxIntOver casting= " + intValue);
++
++        maxIntValue = (int) 2147483640L;//형변환
++        System.out.println("maxIntOver casting= " + intValue);
++    }
++}
++//오버플로우가 발생하는것이 문제임 오버플로우가 발생하기전에 막으셈
+\ No newline at end of file
+Index: src/dd/Ex14.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex14.java b/src/dd/Ex14.java
+new file mode 100644
+--- /dev/null	(date 1721615721876)
++++ b/src/dd/Ex14.java	(date 1721615721876)
+@@ -0,0 +1,17 @@
++package dd;
++
++public class Ex14 {
++
++    public static void main(String[] args) {
++        double doubleValue = 1.5;
++        int intValue = 0;
++
++        //intValue = doubleValue;//컴파일 오류
++        intValue = (int) doubleValue;//형변화
++        System.out.println(intValue );
++
++        int z = (int)10.5;
++        System.out.println(z);
++        //캐스팅 출력:10 double형에서 int 형으로 형변환 했기 때문에 소수자리를 빼고 10으로 출력된다
++    }
++}
+Index: src/dd/Ex16.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dd/Ex16.java b/src/dd/Ex16.java
+new file mode 100644
+--- /dev/null	(date 1721616897899)
++++ b/src/dd/Ex16.java	(date 1721616897899)
+@@ -0,0 +1,31 @@
++package dd;
++
++public class Ex16 {
++
++    public static void main(String[] args) {
++        int div1 = 3 / 2;//1.5
++        System.out.println("div1 = " + div1);
++
++        double div2 = 3 / 2; //1.5
++        System.out.println("div2 = " + div2);//1.0
++
++        double div3 = 3.0 / 2;
++        System.out.println("div3 = " + div3);//1.5
++
++        double div4 = (double) 3 / 2;
++        System.out.println("div4 = " + div4);//1.5
++
++        int a = 3;
++        int b = 2;
++        double result = (double) a / b;
++        System.out.println("result = " + result);//1.5
++        /*
++        같은타입끼리 계산은 같은 타입의 결과를냄
++        int + int 는 int
++        double + double는 double
++        서로 다른 타입의 계산은 큰범위로 자동형변환이 일어남
++        int + lonf는 long + long
++        int double 은 double + double 자동형변환이 된다
++         */
++    }
++}
+Index: src/ee/Ex01.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ee/Ex01.java b/src/ee/Ex01.java
+new file mode 100644
+--- /dev/null	(date 1721700027708)
++++ b/src/ee/Ex01.java	(date 1721700027708)
+@@ -0,0 +1,28 @@
++package ee;
++
++import java.util.Scanner;
++
++public class Ex01 {
++    /*
++    scanner.nextLine() -> 엔터(\n)입력할 때 까지 문자를 가져옴
++    scanner.nextInt() -> 입력을 int 형으로가져옴, 정수입력
++    scanner.nextDouble() -> 입력을 double형으로 가져옴, 실수입력
++     */
++
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.print("문자열을 입력하세요");
++        String str = scanner.nextLine();//입력을 String으로 가져옴
++        System.out.println("입력한 문자열 = " + str);
++
++        System.out.print("정수를 입력하세요");
++        int intValue = scanner.nextInt();//입력을 int 로 가져옴
++        System.out.println("입력한 정수: " + intValue);
++
++        System.out.print("실수를 입력하세요:");
++        double doubleValue = scanner.nextDouble();//입력을 double로 가져옴
++        System.out.println("입력한 실수: = " + doubleValue);
++
++    }
++}
+Index: ../ex18/.idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../ex18/.idea/encodings.xml b/../ex18/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1721617828722)
++++ b/../ex18/.idea/encodings.xml	(date 1721617828722)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../workjava/src/aa/Scanner1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../workjava/src/aa/Scanner1.java b/../workjava/src/aa/Scanner1.java
+new file mode 100644
+--- /dev/null	(date 1721717637396)
++++ b/../workjava/src/aa/Scanner1.java	(date 1721717637396)
+@@ -0,0 +1,25 @@
++package aa;
++
++import java.util.Scanner;
++
++public class Scanner1 {
++
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        System.out.print("음식 이름을 입력하셈:");
++        String foodName = scanner.nextLine();
++
++        System.out.print("음식 가격 입력하셈:");
++        int foodPrice = scanner.nextInt();
++
++        System.out.print("음식의 수량 입력하셈:");
++        int foodQuantity = scanner.nextInt();
++
++        int totalPrice = foodPrice + foodQuantity;
++
++        System.out.println(foodName + " " + foodQuantity + "개를 주문하셨슴. 총 가격은 " + totalPrice + "원임.");
++
++
++    }
++}

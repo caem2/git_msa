@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca3f78d6-6ecd-410e-bed7-019bb97ddead" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ex07/src/aa/kk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex07/src/aa/ll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex07/src/aa/oo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex07/src/bb/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex07/src/bb/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ex07/src/bb/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ex07.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ZZZ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa/AA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa/AAA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa/BBB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa/CCC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa/CirCle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/aa/DDD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex13/src/Ex04.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex13/src/Ex04.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2jJ4CIvFMKqe1h2ltiSbfb03kFN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Ex05.executor": "Run",
+    "Application.Main (1).executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.ZZZ.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "uswe2",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "D:/work/java_work/ex14/src/Main.java"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Ex05">
+    <configuration name="Ex05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ex05" />
+      <module name="ex14" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ex14" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ex14" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZZZ" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ZZZ" />
+      <module name="ex14" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Ex05" />
+        <item itemvalue="Application.ZZZ" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca3f78d6-6ecd-410e-bed7-019bb97ddead" name="Changes" comment="" />
+      <created>1721091722208</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721091722208</updated>
+    </task>
+    <servers />
+  </component>
+</project>
