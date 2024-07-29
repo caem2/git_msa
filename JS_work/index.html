@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+    <h1 id="hello">안녕하세요</h1>
+    <h1 id="hi">초보임</h1>
+
+    <script>
+      document.getElementById('hello').innerHTML = '안녕';
+      //html 문서의 id가 hello인 요소를 찾아와라, 찾아서 안녕으로 바꿔라(js로 html조작)
+      document.getElementById('hello').style.color = 'red';
+      document.getElementById('hi').innerHTML = 'JS고수';
+      document.getElementById('hi').style.fontSize = '16px'
+    </script>
+</body>
+</html> 
