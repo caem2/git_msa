@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starface 스타일 마이 페이지</title>
+    <link rel="stylesheet" href="/css/asas.css">
+    <style>
+        @font-face{
+            font-family:'SDMiSaeng';
+		src: local('SDMiSaeng'),
+			url('SDMiSaeng.eot'),
+			url('SDMiSaeng.woff') format('woff'),
+			url('SDMiSaeng.ttf') format('truetype');
+        }
+        .sdms-font{
+		font-family: 'SDMiSaeng', sans-serif;
+		color: black;
+        }
+        
+    </style>
+    <script defer src="/js1/asa.js"></script>
+</head>
+<body>
+    <header>
+        <h1>마이 페이지</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('profile')">프로필</a></li>
+            <li><a href="#" onclick="showSection('order-history')">주문 내역</a></li>
+            <li><a href="#">관심 상품</a></li>
+            <li><a href="#">설정</a></li>
+        </ul>
+    </nav>
+    <section id="profile" class="section active">
+        <div class="profile-container">
+            <img src="/img/KakaoTalk_20240730_142141014.jpg" alt="프로필 사진" class="profile-img">
+            <div class="profile-info">
+                <h2>정채미</h2>
+                <p>ID: coal5646</p>
+                <p>이메일: wjdcoal5646@naver.com</p>
+            </div>
+        </div>
+    </section>
+    <section id="order-history" class="section">
+        <h2>주문 내역</h2>
+        <ul>
+            <li>주문번호: 123456 <br> 상품명: 헤드셋 <br> 주문 날짜: 2024-07-25</li>
+            <li>주문번호: 123457 <br> 상품명: 이어폰 <br> 주문 날짜: 2024-07-20</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 정채미. All rights reserved.</p>
+    </footer>
+</body>
+</html>
