@@ -37,10 +37,6 @@ public class Scanner8 {
 //            sum += input;
 //            count++;
 //        }
-        while ((intput = scanner.nextInt()) != -1){
-            sum += intput;
-            count++;
-        }
 
         double average = (double) sum / count;
         System.out.println("입력한 숫자들 합:" + sum);
