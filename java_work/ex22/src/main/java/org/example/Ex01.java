@@ -1,15 +1,23 @@
 package org.example;
 
-import java.util.Arrays;
+import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class Ex01 {
 
     public static void main(String[] args) {
-        int[] num = {1,2,3,4,5};
 
-        int[] copynum1 = Arrays.copyOf(num,2);
-        int[] copynum2 = Arrays.copyOfRange(num,2,4);
-        System.out.println(Arrays.toString(copynum1));
-        System.out.println(Arrays.toString(copynum2));
+        Box <Apple> box1 = new Box<Apple>();
+        Box <Orange> box2 = new Box<Orange>();
+
+        Box<String> box3 = new Box<>();
+        Box<Scanner> box4 = new Box<>();
+        Box<StringTokenizer> box5 = new Box<>();
+
+        box1.setObject(new Apple());
+        box2.setObject(new Orange());
+
+        Apple apple = box1.getObject();
+        Orange orange = box2.getObject();
     }
 }
