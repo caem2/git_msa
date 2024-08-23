@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>구구단 출력하기</h1>
+    <label for="numberInput">숫자 입력: </label>
+    <input type="number" id="numberInput" min="1" max="9">
+    <button onclick="showMultiplicationTable()">구구단 출력</button>
+
+    <h2>결과:</h2>
+    <div id="result"></div>
+
+    <script>
+        function showMultiplicationTable() {
+            const number = document.getElementById("numberInput").value;
+            let resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = '';
+
+            if (number >= 1 && number <= 9) {
+                let result = '';
+                for (let i = 1; i <= 9; i++) {
+                    result += `${number} x ${i} = ${number * i}<br>`;
+                }
+                resultDiv.innerHTML = result;
+            } else {
+                resultDiv.innerHTML = '1에서 9 사이의 숫자를 입력하세요.';
+            }
+        }
+    </script>
+</body>
+</html>
