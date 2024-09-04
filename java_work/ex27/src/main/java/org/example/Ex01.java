@@ -1,13 +1,35 @@
 package org.example;
 
+import java.lang.reflect.Member;
+
 class Outer{
     int num = 0;
 
-    class Member{
+    class Member implements java.lang.reflect.Member {
         void add(int n){
             num += n;
         }
         int get(){return num;}
+
+        @Override
+        public Class<?> getDeclaringClass() {
+            return null;
+        }
+
+        @Override
+        public String getName() {
+            return "";
+        }
+
+        @Override
+        public int getModifiers() {
+            return 0;
+        }
+
+        @Override
+        public boolean isSynthetic() {
+            return false;
+        }
     }
 }
 
